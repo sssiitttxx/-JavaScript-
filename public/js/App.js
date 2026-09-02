@@ -51,7 +51,7 @@ class App {
     this.modals = {
       register: new Modal(document.querySelector("#modal-register")),
       login: new Modal(document.querySelector("#modal-login")),
-      createAccount: new Modal(document.querySelector("#modal-new-account")),
+      newAccount: new Modal(document.querySelector("#modal-new-account")),
       newIncome: new Modal(document.querySelector("#modal-new-income")),
       newExpense: new Modal(document.querySelector("#modal-new-expense")),
     };
@@ -64,7 +64,7 @@ class App {
     this.widgets = {
       accounts: new AccountsWidget(document.querySelector(".accounts-panel")),
       transactions: new TransactionsWidget(
-        document.querySelector(".transactions-panel")
+        document.querySelector(".transactions-panel"),
       ),
       user: new UserWidget(document.querySelector(".user-panel")),
     };
@@ -78,13 +78,13 @@ class App {
       login: new LoginForm(document.querySelector("#login-form")),
       register: new RegisterForm(document.querySelector("#register-form")),
       createAccount: new CreateAccountForm(
-        document.querySelector("#new-account-form")
+        document.querySelector("#new-account-form"),
       ),
       createIncome: new CreateTransactionForm(
-        document.querySelector("#new-income-form")
+        document.querySelector("#new-income-form"),
       ),
       createExpense: new CreateTransactionForm(
-        document.querySelector("#new-expense-form")
+        document.querySelector("#new-expense-form"),
       ),
     };
   }
