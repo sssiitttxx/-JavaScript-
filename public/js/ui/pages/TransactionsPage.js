@@ -163,7 +163,7 @@ class TransactionsPage {
       "ноября",
       "декабря",
     ];
-    const date = new Date(dataString.replace(/-/g, "/"));
+    const date = new Date(dataString.replace(" ", "T"));
     const day = date.getDate();
     const month = months[date.getMonth()];
     const year = date.getFullYear();
